@@ -1,4 +1,4 @@
-3G-Scheduler
+3G Scheduler
 ============
 
 Android 3G device scheduler for online app refresh
