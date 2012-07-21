@@ -1,7 +1,5 @@
 package com.hernan.keepmeup;
 
-import com.hernan.keepmeup.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,7 +14,7 @@ import android.widget.ToggleButton;
 public class MainActivity extends Activity {
 	
     public static final String EXTRA_MESSAGE = "com.hernan/tresgscheduler";
-
+    
 	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -24,7 +22,17 @@ public class MainActivity extends Activity {
         setContentView(R.layout.main);
     }
     
-    public void onServiceChange(View view) {
+    protected void onResume() {
+    	super.onResume();
+    }
+    
+    protected void onDestroy(View view){
+    	super.onDestroy();
+    	
+    	stopDataService(view);
+    }
+    
+    public void onServiceButtonChange(View view) {
         // Is the toggle on?
         boolean on = ((ToggleButton) view).isChecked();
         

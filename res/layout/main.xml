@@ -9,7 +9,7 @@
         android:id="@+id/toggleButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onServiceChange"
+        android:onClick="onServiceButtonChange"
         android:textOff="Service OFF"
         android:textOn="Service ON" />
     
