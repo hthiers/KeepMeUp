@@ -34,7 +34,7 @@ public class MobileDataService extends Service {
     int periodMain = delayMain; // cada cuanto tiempo volvera a conectar    
     final Timer timerMain = new Timer();
 	
-    final int delay = 60000; // tiempo hasta desconectar (60 segundos)
+    final int delay = 120000; // tiempo antes de desconectar (2 minutos)
     final Timer timer = new Timer();
 	
     ConnectivityManager comManager;
